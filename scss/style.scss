@@ -1,0 +1,412 @@
+$orangeColor: #f7654a;
+$darkColor: #000000;
+$greyColor: #999999;
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$bgGreyColor: #F7F7F7;
+$greyColor: #999999;
+
+
+$fontSize14: 14px;
+$fontSize16: 16px;
+$fontSize21: 21px;
+$fontSize24: 24px;
+$fontSize36: 36px;
+$fontSize48: 48px;
+$fontSize96: 96px;
+
+$fontFamilyOswald: Oswald;
+$fontFamilyOpenSans: Open Sans;
+
+$margin30: 30px;
+
+
+$containerWidth: 1110px;
+$contentWidth:1110px;
+
+
+$cardWidth: 190px;
+$cardWidth2: 350px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/bg.svg");
+  background-size: cover;
+  position: relative;
+
+  &__navigation {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__main-title {
+    font-family: $fontFamilyOswald;
+    font-size: 64px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 100px;
+    color: $whiteColor;
+  }
+
+  &__sub-title {
+    font-family: $fontFamilyOswald;
+    color: $whiteColor;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 300px;
+  }
+
+  &__cards {
+    width: $contentWidth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 1px solid $whiteColor;
+    background-color: #F7F7F7;
+    padding: 57px 0;
+    top: 74%;
+    left: 13%;
+
+    &__card {
+      width: $cardWidth;
+
+      &__number {
+        font-size: 72px;
+        color: $orangeColor;
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      &__year {
+        font-size: $fontSize36;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      &__magazin {
+        color: $greyColor;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}
+
+.projects {
+  &__title {
+    font-family: $fontFamilyOswald;
+    font-size: $fontSize36;
+    text-align: center;
+    margin-top: 250px;
+    color: $darkColor;
+  }
+
+  &__cards {
+    font-family: $fontFamilyOswald;
+    width: $contentWidth;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__card {
+      width: 30%;
+
+      &__img {
+        margin-top: 60px;
+      }
+
+      &__line {
+        width: 55px;
+        height: 6px;
+        background-color: $orangeColor;
+        margin-top: 45px;
+      }
+
+      &__title {
+        margin-top: 15px;
+      }
+
+      &__description {
+        font-size: 16px;
+        color: $greyColor;
+        text-align: left;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.works {
+  &request__navigation {
+    font-family: $fontFamilyOswald;
+    display: flex;
+    margin-top: 180px;
+    border: 1px solid #f7654a;
+    background-color: $orangeColor;
+    height: 25%;
+    padding: 30px 150px;
+  }
+
+  &subscribe__title {
+    color: $whiteColor;
+    border: 1px solid $orangeColor;
+  }
+
+  &massage__main__title {
+    font-size: $fontSize48;
+    margin-bottom: 20px;
+  }
+
+  &massage__title {
+    font-size: $fontSize24;
+  }
+
+  &massage__img {
+    margin-right: 10px;
+  }
+
+  &reg__button {
+    display: flex;
+    margin-left: 350px;
+  }
+}
+
+.services{
+  &__question{
+    font-family: $fontFamilyOswald;
+   font-size: $fontSize36;
+    text-align: center;
+    color: $darkColor;
+    margin-top: 150px;
+
+  }
+  font-family: $fontFamilyOswald;
+  &__group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__cards{
+    background-color: $bgGreyColor;
+    border: 1px solid $whiteColor;
+    width: 260px;
+    padding: 90px 0 90px 55px;
+    margin: 15px;
+
+    img{
+      margin-left: 60px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__title{
+    font-size: $fontSize21;
+    color: $blackColor;
+
+  }
+
+}
+
+
+
+.sponsors {
+  font-family: $fontFamilyOswald;
+  margin-top: 100px;
+  width: 100%;
+  height: 300px;
+  background-color: $darkColor;
+
+  &__title {
+    color: $whiteColor;
+    font-size: $fontSize36;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 68px;
+    padding-top: 88px;
+  }
+
+  &__icons {
+    text-align: center;
+  }
+
+  &__icons img {
+    width: 170px;
+    height: 50px;
+    padding-left: 65px;
+  }
+}
+
+.reviews {
+  &__title {
+    font-family: $fontFamilyOswald;
+    color: $blackColor;
+    font-size: $fontSize36;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 105px;
+    padding-bottom: 50px;
+  }
+
+  &__cards {
+    display: flex;
+
+    &-card {
+      margin: 25px;
+      width: 360px;
+      height: 220px;
+      padding: 30px;
+      font-family: $fontFamilyOswald;
+      background-color: $bgGreyColor;
+    }
+
+    &-text {
+      margin: 30px;
+      font-size: $fontSize14;
+      padding-left: 10px;
+      color: $greyColor;
+      line-height: 21px;
+    }
+
+    &-symbol {
+      height: 10%;
+      color: $orangeColor;
+      font-size: $fontSize96;
+      margin-left: 30px;
+      margin-bottom: 35px;
+    }
+
+    &-reviewer {
+      font-size: 21px;
+      color: $blackColor;
+      font-weight: 600;
+      text-align: center;
+      font-family: $fontFamilyOswald;
+    }
+
+    &-reviewer span {
+      color: $orangeColor;
+    }
+  }
+}
+
+.send__request{
+  margin-top: 150px;
+  background-color: $orangeColor;
+  padding: 30px 0 45px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: $fontFamilyOswald;
+  &-someText{
+    h1{
+      font-size: $fontSize48;
+      color: $whiteColor;
+    }
+    p{
+      margin-top: 20px;
+      color: $whiteColor;
+      font-size: $fontSize24;
+    }
+  }
+  &_btn{
+    background-color: #F7F7F7;
+    width: 175px;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    img{
+
+    }
+    span{
+      margin-left: 15px;
+    }
+  }
+}
+.contacts {
+  font-family: $fontFamilyOswald;
+  &__title {
+    margin-top: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    &-card {
+      width: 255px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-img {
+        height: 50px;
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+      &-address {
+        margin-top: 36px;
+        font-size: 24px;
+        color: #999999;
+      }
+      &-title {
+        text-align: center;
+      }
+      &-orange {
+        color: #F7654A;
+        text-align: center;
+      }
+    }
+  }
+}
+.footer {
+  background-color: #404149;
+  padding: 10px 0;
+  height: 24px;
+  font-family: $fontFamilyOswald;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
